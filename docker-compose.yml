@@ -1,0 +1,14 @@
+version: "2"
+services:
+  docker-node:
+    image: "node:9.5-alpine"
+    user: "node"
+    working_dir: /home/node/app
+    ports: 
+      - "8888:8888"
+    environment:
+      - NODE_ENV=production
+      - NPM_CONFIG_LOGLEVEL=info
+    volumes:
+      - ./:/home/node/app
+    command: "npm start"

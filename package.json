@@ -1,0 +1,14 @@
+{
+  "name": "docker_node",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "Jerry H.M. Tsoi <hungming.tsoi@gmail.com>",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "winston": "^3.0.0-rc1"
+  }
+}
